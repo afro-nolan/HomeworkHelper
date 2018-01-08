@@ -6,6 +6,7 @@ print "2. Area of A Circle"
 print "3. Circumference Of A Circle"
 print "4. Area Of A Rectangle"
 print "5. Surface Area Of Cylinder"
+print "6. Volume Of Cylinder"
 
 formula = raw_input("Enter number of formula: ")
 
@@ -41,5 +42,13 @@ elif int(formula) == 5:
     r = float(input("Enter radius: "))
     area = 2 * 3.14 * r * h
     print "Surface Area of cylinder is ", float(area)
+
+#Volume of cylinder
+elif int(formula) == 6:
+    r = float(input("Enter radius: "))
+    h = float(input("Enter height: "))
+    volume = 3.14 * (r ** 2) * h
+    print "Volume of cylinder is: ", float(volume)
     
+   
     
