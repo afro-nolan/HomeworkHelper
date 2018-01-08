@@ -57,7 +57,14 @@ def midpoint():
     y_cor = (y1 + y2) / 2
     mid = str(x_cor) + "," + str(y_cor)
     print "(" + mid + ")"
-              
+
+def arithmetic_series():
+    a = float(input("Enter first term: "))
+    d = float(input("Enter common difference: "))
+    n = float(input("Enter n: "))
+    term = float(a + (n-1) * d)
+    print "Nth term is: ", float(term)
+                  
 print "Formulas: "
 print "1. Area Of A Triangle"
 print "2. Area of A Circle"
@@ -68,6 +75,7 @@ print "6. Volume Of Cylinder"
 print "7. Pythagoras' Theorem"
 print "8. Slope of a line"
 print "9. Midpoint Of A Line"
+print "10. Arithmetic Series"
 
 formula = raw_input("Enter number of formula: ")
 
@@ -106,6 +114,11 @@ elif int(formula) == 8:
 #midpoint   
 elif int(formula) == 9:
     midpoint()
+    
+#arithmetic series
+elif int(formula) == 10:
+    arithmetic_series()
+    
     
    
     
