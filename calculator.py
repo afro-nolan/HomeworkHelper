@@ -1,5 +1,5 @@
 #Calculates formulas from given data
-
+import sqrt from math
 print "Formulas: "
 print "1. Area Of A Triangle"
 print "2. Area of A Circle"
@@ -7,6 +7,8 @@ print "3. Circumference Of A Circle"
 print "4. Area Of A Rectangle"
 print "5. Surface Area Of Cylinder"
 print "6. Volume Of Cylinder"
+print "7. Pythagoras' Theorem"
+print "8. Slope of a line"
 
 formula = raw_input("Enter number of formula: ")
 
@@ -49,6 +51,22 @@ elif int(formula) == 6:
     h = float(input("Enter height: "))
     volume = 3.14 * (r ** 2) * h
     print "Volume of cylinder is: ", float(volume)
+
+#pythagoras
+elif int(formula) == 7:
+    s = float(input("Enter side: "))
+    s1 = float(input("Enter side: "))
+    hyp = math.sqrt((s**2) + (s1 ** 2))
+    print "Hypotheneuse is: ", float(hyp)
+
+#Slope    
+elif int(formula) == 8:
+    x1 = float(input("Enter x1: "))
+    y1 = float(input("Enter y1: "))
+    x2 = float(input("Enter x2: "))
+    y2 = float(input("Enter y2: "))
+    slope = float((y2 - y1) / (x2 - x1))
+    print "Slope is: ", float(slope)
     
    
     
