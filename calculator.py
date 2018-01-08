@@ -47,6 +47,16 @@ def slope():
     y2 = float(input("Enter y2: "))
     slope = float((y2 - y1) / (x2 - x1))
     print "Slope is: ", float(slope)
+    
+def midpoint():
+    x1 = float(input("Enter x1: "))
+    y1 = float(input("Enter y1: "))
+    x2 = float(input("Enter x2: "))
+    y2 = float(input("Enter y2: "))
+    x_cor = (x1 + x2) / 2
+    y_cor = (y1 + y2) / 2
+    mid = str(x_cor) + "," + str(y_cor)
+    print "(" + mid + ")"
               
 print "Formulas: "
 print "1. Area Of A Triangle"
@@ -57,6 +67,7 @@ print "5. Surface Area Of Cylinder"
 print "6. Volume Of Cylinder"
 print "7. Pythagoras' Theorem"
 print "8. Slope of a line"
+print "9. Midpoint Of A Line"
 
 formula = raw_input("Enter number of formula: ")
 
@@ -91,6 +102,10 @@ elif int(formula) == 7:
 #Slope    
 elif int(formula) == 8:
     slope()
+    
+#midpoint   
+elif int(formula) == 9:
+    midpoint()
     
    
     
