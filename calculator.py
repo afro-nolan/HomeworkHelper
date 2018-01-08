@@ -1,5 +1,5 @@
 #Calculates formulas from given data
-import sqrt from math
+import math
 print "Formulas: "
 print "1. Area Of A Triangle"
 print "2. Area of A Circle"
